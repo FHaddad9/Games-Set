@@ -15,5 +15,6 @@ public class Play {
 		
 		words.maskedWord();
 		board.printBoard();
+		words.guess();
 	}
 }
