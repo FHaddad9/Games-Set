@@ -1,34 +1,60 @@
 package Hangman;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Words {
 	private String secretWord;
-	private Scanner scan;
-	public static int chance;
+	private ArrayList<String> list;
+	private ArrayList<Integer> indList;
 	private Board board;
+	private Scanner scan;
+	private String starWord;
+	public static int chance;
 	
 	public Words(String secretWord) {
-		this.secretWord = secretWord;;
+		this.secretWord = secretWord;
+		this.starWord = "";
 		this.scan = new Scanner(System.in);
+		this.list = new ArrayList<>();
+		this.indList = new ArrayList<>();
 		this.board = new Board();
 		Words.chance = 0;
+	}
+	
+	public void jump() {
+		for(int i = 0; i <= 35; i++) {
+			System.out.println("");
+		}
 	}
 
 	public void maskedWord() {
 		int length = secretWord.length();
 		
-		for(int i = 0; i <= 35; i++) {
-			System.out.println("");
+		for(int i = 0; i < length; i++) {
+			starWord += "*";
 		}
+				
+		System.out.print("The secret word is: " + starWord);
+		System.out.println();
+	}
+	
+	public void maskedWord(String ltr, int index) {
+		starWord = "";
 		
-		System.out.print("The secret word is: ");
+		int length = secretWord.length();
 		
 		for(int i = 0; i < length; i++) {
-			System.out.print("*");
+			for(int j = 0; j < indList.size(); j++) {
+				if(i == indList.get(j)) {
+					starWord += list.get(j);
+				} else if(i == (length - length + i)) {
+					starWord += "*";
+				}
+			}
 		}
 		
-		System.out.println();
+		System.out.print("The secret word is: " + starWord + "\n");
 	}
 	
 	public void guess() {
@@ -41,6 +67,9 @@ public class Words {
 			
 			if(index >= 0) {
 				System.out.println("The letter " + letter + " is contained in the word");
+				list.add(letter);
+				indList.add(index);
+				maskedWord(letter, index);
 			} else {
 				System.out.println("The letter " + letter + " is not contained in the word!");
 				chance++;

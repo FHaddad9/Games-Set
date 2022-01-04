@@ -13,6 +13,7 @@ public class Play {
 		String word = scan.next();
 		Words words = new Words(word);
 		
+		words.jump();
 		words.maskedWord();
 		board.printBoard();
 		words.guess();
