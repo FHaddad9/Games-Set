@@ -12,6 +12,7 @@ public class Words {
 	
 	public Words(char[] secretWord) {
 		this.secretWord = secretWord;
+		this.starWord = new char[secretWord.length];
 		this.scan = new Scanner(System.in);
 		this.board = new Board();
 		Words.chance = 0;
@@ -44,7 +45,7 @@ public class Words {
 				starWord[i] = letter[0];
 				check = true;
 			}
-			System.out.print(secretWord[i]);
+			System.out.print(starWord[i]);
 		}
 		
 		System.out.println();
@@ -52,9 +53,30 @@ public class Words {
 		return check;
 	}
 	
+	public boolean win() {
+		int check = 0;
+		
+		for(int i = 0; i < secretWord.length; i++) {
+			if(secretWord[i] == starWord[i]) {
+				check++;
+			}
+		}
+		
+		if(check == secretWord.length) {
+			return true;
+		}
+		
+		return false;
+	}
+	
 	public void guess() {
 		
 		while(chance != 6) {
+			if(win()) {
+				System.out.println("You win!");
+				break;
+			}
+			
 			System.out.print("\n\nWhich letter would you like to guess? ");
 			String letter = scan.next();
 			
