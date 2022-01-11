@@ -1,6 +1,5 @@
 package Hangman;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Words {
@@ -26,11 +25,19 @@ public class Words {
 
 	public void maskedWord() {
 		System.out.print("The secret word is: ");
+		System.out.println("Length: "+ secretWord.length);
 		
 		for(int i = 0; i < secretWord.length; i++) {
-			starWord[i] = '*';
-			System.out.print(starWord[i]);
+			if(secretWord[i] == ' ') {
+				starWord[i] = ' ';
+				System.out.print(starWord[i]);
+			} else {
+				starWord[i] = '*';
+				System.out.print(starWord[i]);
+			}
 		}
+		
+		
 				
 		System.out.println();
 	}

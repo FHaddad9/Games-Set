@@ -10,7 +10,7 @@ public class Play {
 		System.out.println("Welcome to Hangman!");	
 		
 		System.out.print("\nPlease enter your secret word: ");
-		String word = scan.next();
+		String word = scan.nextLine();
 		Words words = new Words(word.toCharArray());
 		
 		words.jump();
