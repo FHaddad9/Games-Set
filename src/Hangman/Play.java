@@ -11,7 +11,7 @@ public class Play {
 		
 		System.out.print("\nPlease enter your secret word: ");
 		String word = scan.next();
-		Words words = new Words(word);
+		Words words = new Words(word.toCharArray());
 		
 		words.jump();
 		words.maskedWord();

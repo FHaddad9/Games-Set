@@ -4,20 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Words {
-	private String secretWord;
-	private ArrayList<String> list;
-	private ArrayList<Integer> indList;
+	private char[] secretWord;
+	private char[] starWord;
 	private Board board;
 	private Scanner scan;
-	private String starWord;
 	public static int chance;
 	
-	public Words(String secretWord) {
+	public Words(char[] secretWord) {
 		this.secretWord = secretWord;
-		this.starWord = "";
 		this.scan = new Scanner(System.in);
-		this.list = new ArrayList<>();
-		this.indList = new ArrayList<>();
 		this.board = new Board();
 		Words.chance = 0;
 	}
@@ -29,32 +24,32 @@ public class Words {
 	}
 
 	public void maskedWord() {
-		int length = secretWord.length();
+		System.out.print("The secret word is: ");
 		
-		for(int i = 0; i < length; i++) {
-			starWord += "*";
+		for(int i = 0; i < secretWord.length; i++) {
+			starWord[i] = '*';
+			System.out.print(starWord[i]);
 		}
 				
-		System.out.print("The secret word is: " + starWord);
 		System.out.println();
 	}
 	
-	public void maskedWord(String ltr, int index) {
-		starWord = "";
+	public boolean maskedWord(String ltr) {
+		boolean check = false;
 		
-		int length = secretWord.length();
+		char[] letter = ltr.toCharArray();
 		
-		for(int i = 0; i < length; i++) {
-			for(int j = 0; j < indList.size(); j++) {
-				if(i == indList.get(j)) {
-					starWord += list.get(j);
-				} else if(i == (length - length + i)) {
-					starWord += "*";
-				}
+		for(int i = 0; i < secretWord.length; i++) {
+			if(secretWord[i] == letter[0]) {
+				starWord[i] = letter[0];
+				check = true;
 			}
+			System.out.print(secretWord[i]);
 		}
 		
-		System.out.print("The secret word is: " + starWord + "\n");
+		System.out.println();
+		
+		return check;
 	}
 	
 	public void guess() {
@@ -63,13 +58,9 @@ public class Words {
 			System.out.print("\n\nWhich letter would you like to guess? ");
 			String letter = scan.next();
 			
-			int index = secretWord.indexOf(letter);
-			
-			if(index >= 0) {
+			if(maskedWord(letter)) {
 				System.out.println("The letter " + letter + " is contained in the word");
-				list.add(letter);
-				indList.add(index);
-				maskedWord(letter, index);
+				maskedWord(letter);
 			} else {
 				System.out.println("The letter " + letter + " is not contained in the word!");
 				chance++;
