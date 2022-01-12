@@ -23,23 +23,17 @@ public class Words {
 		}
 	}
 
-	public void maskedWord() {
-		System.out.print("The secret word is: ");
-		System.out.println("Length: "+ secretWord.length);
-		
+	public char[] maskedWord() {
 		for(int i = 0; i < secretWord.length; i++) {
 			if(secretWord[i] == ' ') {
 				starWord[i] = ' ';
-				System.out.print(starWord[i]);
 			} else {
 				starWord[i] = '*';
-				System.out.print(starWord[i]);
 			}
 		}
 		
 		
-				
-		System.out.println();
+		return starWord;
 	}
 	
 	public boolean maskedWord(String ltr) {
@@ -76,6 +70,16 @@ public class Words {
 		return false;
 	}
 	
+	public void printStar() {
+		System.out.print("\nThe secret word is: ");
+		
+		for(int i = 0; i < secretWord.length; i++) {
+			System.out.print(starWord[i]);
+		}
+		
+		System.out.println();
+	}
+	
 	public void guess() {
 		
 		while(chance != 6) {
@@ -83,6 +87,8 @@ public class Words {
 				System.out.println("You win!");
 				break;
 			}
+			
+			printStar();
 			
 			System.out.print("\n\nWhich letter would you like to guess? ");
 			String letter = scan.next();
