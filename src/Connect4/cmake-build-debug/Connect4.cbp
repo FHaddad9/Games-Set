@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/InitialiseBoard.c">
+			<Option target="Connect4"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/InitialiseBoard.h">
+			<Option target="Connect4"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/main.c">
 			<Option target="Connect4"/>
 		</Unit>

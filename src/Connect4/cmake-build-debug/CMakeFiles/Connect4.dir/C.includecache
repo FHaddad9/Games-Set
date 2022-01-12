@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/InitialiseBoard.c
+InitialiseBoard.h
+/cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/InitialiseBoard.h
+stdio.h
+-
+
+/cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/InitialiseBoard.h
+

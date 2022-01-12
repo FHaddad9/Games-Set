@@ -143,6 +143,33 @@ Connect4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/build
 .PHONY : Connect4/fast
 
+InitialiseBoard.o: InitialiseBoard.c.o
+
+.PHONY : InitialiseBoard.o
+
+# target to build an object file
+InitialiseBoard.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/InitialiseBoard.c.o
+.PHONY : InitialiseBoard.c.o
+
+InitialiseBoard.i: InitialiseBoard.c.i
+
+.PHONY : InitialiseBoard.i
+
+# target to preprocess a source file
+InitialiseBoard.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/InitialiseBoard.c.i
+.PHONY : InitialiseBoard.c.i
+
+InitialiseBoard.s: InitialiseBoard.c.s
+
+.PHONY : InitialiseBoard.s
+
+# target to generate assembly for a file
+InitialiseBoard.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/InitialiseBoard.c.s
+.PHONY : InitialiseBoard.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -179,6 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Connect4"
+	@echo "... InitialiseBoard.o"
+	@echo "... InitialiseBoard.i"
+	@echo "... InitialiseBoard.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
