@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Connect4.dir/CheckMove.c.o"
   "CMakeFiles/Connect4.dir/InitialiseBoard.c.o"
   "CMakeFiles/Connect4.dir/main.c.o"
   "Connect4.exe"

@@ -143,6 +143,33 @@ Connect4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/build
 .PHONY : Connect4/fast
 
+CheckMove.o: CheckMove.c.o
+
+.PHONY : CheckMove.o
+
+# target to build an object file
+CheckMove.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/CheckMove.c.o
+.PHONY : CheckMove.c.o
+
+CheckMove.i: CheckMove.c.i
+
+.PHONY : CheckMove.i
+
+# target to preprocess a source file
+CheckMove.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/CheckMove.c.i
+.PHONY : CheckMove.c.i
+
+CheckMove.s: CheckMove.c.s
+
+.PHONY : CheckMove.s
+
+# target to generate assembly for a file
+CheckMove.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/CheckMove.c.s
+.PHONY : CheckMove.c.s
+
 InitialiseBoard.o: InitialiseBoard.c.o
 
 .PHONY : InitialiseBoard.o
@@ -206,6 +233,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Connect4"
+	@echo "... CheckMove.o"
+	@echo "... CheckMove.i"
+	@echo "... CheckMove.s"
 	@echo "... InitialiseBoard.o"
 	@echo "... InitialiseBoard.i"
 	@echo "... InitialiseBoard.s"

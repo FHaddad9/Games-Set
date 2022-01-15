@@ -94,12 +94,12 @@ clean: CMakeFiles/Connect4.dir/clean
 CMakeFiles/Connect4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Connect4.dir/build.make CMakeFiles/Connect4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Connect4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Connect4"
 .PHONY : CMakeFiles/Connect4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Connect4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Connect4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/35383/Documents/Games/Games-Set/src/Connect4/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Connect4.dir/rule
