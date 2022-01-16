@@ -14,7 +14,7 @@ public class Play {
 		Words words = new Words(word.toCharArray());
 		
 		words.jump();
-		words.maskedWord();
+		words.maskWord(word);
 		board.printBoard();
 		words.guess();
 	}

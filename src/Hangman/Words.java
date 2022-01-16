@@ -23,7 +23,7 @@ public class Words {
 		}
 	}
 
-	public char[] maskedWord() {
+	public char[] maskWord(String word) {
 		for(int i = 0; i < secretWord.length; i++) {
 			if(secretWord[i] == ' ') {
 				starWord[i] = ' ';
@@ -31,7 +31,6 @@ public class Words {
 				starWord[i] = '*';
 			}
 		}
-		
 		
 		return starWord;
 	}
@@ -46,7 +45,6 @@ public class Words {
 				starWord[i] = letter[0];
 				check = true;
 			}
-			System.out.print(starWord[i]);
 		}
 		
 		System.out.println();
