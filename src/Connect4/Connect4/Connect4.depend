@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1642442519 source:c:\users\35383\documents\games\games-set\src\connect4\connect4\checkmove.c
+	"CheckMove.h"
+	"InitialiseBoard.h"
+	<stdio.h>
+
+1642442553 c:\users\35383\documents\games\games-set\src\connect4\connect4\checkmove.h
+	<stdbool.h>
+	"InitialiseBoard.h"
+
+1642442412 c:\users\35383\documents\games\games-set\src\connect4\connect4\initialiseboard.h
+
+1642442338 source:c:\users\35383\documents\games\games-set\src\connect4\connect4\initialiseboard.c
+	"InitialiseBoard.h"
+	<stdio.h>
+
+1642442613 source:c:\users\35383\documents\games\games-set\src\connect4\connect4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"InitialiseBoard.h"
+

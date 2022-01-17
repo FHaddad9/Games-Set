@@ -1,1 +1,0 @@
-/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/Connect4.dir/main.c.o CMakeFiles/Connect4.dir/InitialiseBoard.c.o CMakeFiles/Connect4.dir/CheckMove.c.o  -o Connect4.exe -Wl,--out-implib,libConnect4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

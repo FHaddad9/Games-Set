@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "InitialiseBoard.h"
 
-int main() {
-
+int main(){
     //declaration of the board
     square board[BOARD_X][BOARD_Y];
     player players[PLAYERS_NUM];

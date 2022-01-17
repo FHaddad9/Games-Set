@@ -65,29 +65,29 @@ void initBoard(square board [BOARD_X][BOARD_Y]) {
 
 //prints board
 void printBoard(square board[BOARD_X][BOARD_Y]) {
+    int colNum = 6;
     printf("\n\t");
 
     for (int i = 0; i < BOARD_X; i++) {
+        printf("%d  ", colNum);
         printf("|");
         for (int j = 0; j < BOARD_Y; j++) {
-
             if(board[i][j].squareColour == RED){
-                printf("( R )");
+                printf("(R)");
             }
             else if(board[i][j].squareColour == YELLOW){
-                printf("( Y )");
+                printf("(Y)");
             }
             else if (board[i][j].type == VALID) {
-                printf("(   )");
+                printf("( )");
             } else if (board[i][j].type == INVALID) {
-                printf("(   )");
+                printf("( )");
             }
         }
-
         printf("|\n");
         printf("\t");
 
-
+        colNum--;
     }
-    printf("\n\t  a\t  b\t  c\t  d\t  e\t  f\t  g\t  h");
+    printf("\n\t     a  b  c  d  e  f  g");
 }

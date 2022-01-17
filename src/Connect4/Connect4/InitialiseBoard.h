@@ -37,3 +37,4 @@ void printBoard(square board[BOARD_X][BOARD_Y]);
 
 
 #endif //CONNECT4_INITIALISEBOARD_H
+
