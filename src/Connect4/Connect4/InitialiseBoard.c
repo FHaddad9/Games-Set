@@ -52,8 +52,8 @@ void initBoard(square board [BOARD_X][BOARD_Y]) {
         for (int j = 0; j < BOARD_Y; j++) {
 
 
-            if(i == 6) {
-                setValid(&board[6][j]);
+            if(i == BOARD_X-1) {
+                setValid(&board[i][j]);
                 setNeutral(&board[i][j]);
             } else {
                 setInvalid(&board[i][j]);
@@ -79,7 +79,7 @@ void printBoard(square board[BOARD_X][BOARD_Y]) {
                 printf("(Y)");
             }
             else if (board[i][j].type == VALID) {
-                printf("( )");
+                printf("(I)");
             } else if (board[i][j].type == INVALID) {
                 printf("( )");
             }

@@ -31,6 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="CheckMove.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="CheckMove.h" />
+		<Unit filename="InitialiseBoard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InitialiseBoard.h" />
+		<Unit filename="MakeMove.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

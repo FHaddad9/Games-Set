@@ -10,7 +10,7 @@
 
 1642442412 c:\users\35383\documents\games\games-set\src\connect4\connect4\initialiseboard.h
 
-1642442338 source:c:\users\35383\documents\games\games-set\src\connect4\connect4\initialiseboard.c
+1642443721 source:c:\users\35383\documents\games\games-set\src\connect4\connect4\initialiseboard.c
 	"InitialiseBoard.h"
 	<stdio.h>
 
@@ -18,4 +18,7 @@
 	<stdio.h>
 	<stdlib.h>
 	"InitialiseBoard.h"
+
+1642448216 source:c:\users\35383\documents\games\games-set\src\connect4\connect4\makemove.c
+	<stdio.h>
 
