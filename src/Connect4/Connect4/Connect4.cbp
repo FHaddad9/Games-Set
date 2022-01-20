@@ -35,6 +35,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="CheckMove.h" />
+		<Unit filename="EnterMove.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="InitialiseBoard.c">
 			<Option compilerVar="CC" />
 		</Unit>
